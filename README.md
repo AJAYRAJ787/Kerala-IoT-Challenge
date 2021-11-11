@@ -1,1 +1,1 @@
-# Kerala IoT Chalange
+# Kerala IoT Challenge
