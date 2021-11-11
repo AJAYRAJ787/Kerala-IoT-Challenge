@@ -1,1 +1,1 @@
-# Kerala IoT Chaleenge
+# Kerala IoT Chalange
