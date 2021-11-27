@@ -199,7 +199,8 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams
 
-![push1](https://user-images.githubusercontent.com/56971600/138453350-97c7cf20-1e3c-48e1-9cf7-dfd24cf78c0e.jpg)
+
+![WhatsApp Image 2021-11-27 at 8 05 22 AM](https://user-images.githubusercontent.com/61041490/143665616-c32bc20a-a3e2-4fa4-95cf-8804403acac8.jpeg)
 
 ![push2](https://user-images.githubusercontent.com/56971600/138454527-5b05c4fd-0954-41e8-af5a-490ca53a783c.jpg)
 
@@ -233,7 +234,10 @@ else
 
 <iframe width="560" height="315"
 src=
-VID_20211122_205846.mp4
+
+
+https://user-images.githubusercontent.com/61041490/143664845-33cd31b9-5ee6-4264-8ba7-32a3ccbbd58d.mp4
+
 
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -252,8 +256,8 @@ allowfullscreen></iframe>
 * USB cable*1
 
 ## Circuit Diagrams
+![WhatsApp Image 2021-11-27 at 7 51 10 AM](https://user-images.githubusercontent.com/61041490/143665286-4acec9c1-c304-4eb3-9e7a-2d3b3e3a32fe.jpeg)
 
-![buzzer](https://user-images.githubusercontent.com/56971600/138455178-a20076ac-bc1f-46e7-b86f-96681aced52f.jpg)
 
 ![BBr05_3102_1628160460](https://user-images.githubusercontent.com/91405741/137346830-1fa2408c-2a1d-4fdf-a049-5736aeb803ec.png)
 
@@ -439,6 +443,80 @@ frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
 
+## Experiment 8 : Flame Sensor
+
+> We are using Infrared Receiver (IR)for detecting Flame 
+
+## Components Required
+* Arduino Uno Board*1
+* Flame Sensor *1
+* Buzzer *1
+* LED *2
+* Breadboard 
+* Jumper Wire*6
+* USB cable*1
+
+## Circuit Diagram
+
+![image](https://user-images.githubusercontent.com/56971600/141062255-a1d478aa-1392-4f93-9b1c-d18d5540345c.png)
+
+
+## Code
+
+```
+
+const int buzzerPin = 12;
+const int flamePin = 11;
+int Flame = HIGH;
+int redled = 5;
+int greenled = 6;
+void setup() 
+{
+  pinMode(buzzerPin, OUTPUT);
+  pinMode(redled, OUTPUT);
+  pinMode(greenled, OUTPUT);
+
+  pinMode(flamePin, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() 
+{
+  Flame = digitalRead(flamePin);
+  if (Flame== LOW)
+  {
+    digitalWrite(buzzerPin, HIGH);
+    digitalWrite(redled, HIGH);
+    digitalWrite(greenled, LOW);
+  }
+  else
+  {
+    digitalWrite(buzzerPin, LOW);
+    digitalWrite(greenled, HIGH);
+    digitalWrite(redled, LOW);
+  }
+}
+
+
+
+```
+
+## Output
+
+> The buzzer produces a beep noise along with red LED lighting up when the IR Reciever is exposed to flames.
+
+![IMG_20211110_115447](https://user-images.githubusercontent.com/56971600/141062505-eaf1713d-519a-4798-877d-65199c28430e.jpg)
+
+
+<iframe width="560" height="315"
+src=
+
+https://user-images.githubusercontent.com/61041490/143664977-d099f71c-1a2f-4e0e-a9b6-5f4cbe99bcd6.mp4
+
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+
 ## Experiment 9 : LM35 Temperature Sensor
 
 > LM35 is a common and easy-to-use temperature sensor.
@@ -505,6 +583,130 @@ delay(500);// wait for 0.5 second
 src=
 
 https://user-images.githubusercontent.com/61041490/142663423-d815b3fc-62a9-4a30-b47b-cb95b3758568.mp4
+
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+
+## Experiment 10 : IR Remote Comntrol Using TSOP
+
+### IR Reciever Module 
+
+![image](https://user-images.githubusercontent.com/56971600/140337148-df56c567-69bf-48ce-8a23-63402a86651f.png)
+
+![image](https://user-images.githubusercontent.com/56971600/140337266-6add0eed-6557-478b-9a56-15278b6ec105.png)
+
+> The signal from the infrared remote controller is a series of binary pulse code. To avoid the other infrared signal interference during the wireless transmission, the signal is pre-modulated at a specific carrier frequency and then send out by an infrared emission diode. The infrared receiving device needs to filter out other waves and receive signals at that specific frequency and to modulate it back to binary pulse code, known as demodulation.
+
+### Working Principle 
+
+> The built-in receiver converts the light signal it received from the sender into feeble electrical signal. The signal will be amplified by the IC amplifier. After automatic gain control, band-pass filtering, demodulation, wave shaping, it returns to the original code. The code is then input to the code identification circuit by the receiver's signal output pin.
+
+![image](https://user-images.githubusercontent.com/56971600/140337956-1ce9a574-dda9-45fa-b3e3-9b8ffc845b1a.png)
+
+### Components Required 
+
+* Arduino Uno Board*1
+* Infrared Remote Controller(You can use TV Remote or any other remote) *1
+* Infrared Receiver *1
+* LED *6
+* 220ΩResistor *6
+* Breadboard Wire *11
+* USB cable*1
+
+### Circuit Diagram 
+
+![image](https://user-images.githubusercontent.com/56971600/140338423-a0a2ac67-13c6-4aae-8734-340807e8b18f.png)
+![image](https://user-images.githubusercontent.com/56971600/140338955-20ae1a1e-f2c0-4c50-8111-264bde108053.png)
+
+### Code 
+
+> Note : If your arduino shows errors while compiling ,You Need To Install IRremote.h Library ,
+
+You can download library  from https//github.com/shirriff/Arduino-IRremote
+
+```
+
+#include <IRremote.h>
+ 
+int RECV_PIN = 3;              
+int c=0;                      
+IRrecv irrecv(RECV_PIN);
+decode_results results;
+
+
+void setup()
+{
+   pinMode(8, OUTPUT);
+   pinMode(9, OUTPUT);
+   pinMode(10, OUTPUT);
+   pinMode(11, OUTPUT);
+   pinMode(12, OUTPUT);
+
+   Serial.begin(9600);
+  irrecv.enableIRIn();                     
+}
+
+void loop() {
+  if (irrecv.decode(&results)) {
+    Serial.println(results.value);
+    irrecv.resume();                        
+  if(results.value==16773645)      //Up                            
+  {
+             digitalWrite(8,HIGH);
+  }
+  else if(results.value==4294967295)
+  {
+             digitalWrite(8,LOW);
+  }
+   if(results.value==16763445)  //Down                                     
+  {
+             digitalWrite(9,HIGH);
+  }
+  else if(results.value==4294967295)
+  {
+             digitalWrite(9,LOW);
+  }
+    if(results.value==16769565) //left                                       
+  {
+             digitalWrite(10,HIGH);
+  }
+  else if(results.value==4294967295) 
+  {
+             digitalWrite(10,LOW);
+  }
+    if(results.value==16771605) //right                                       
+  {
+             digitalWrite(11,HIGH);
+  }
+  else if(results.value==4294967295)
+  {
+             digitalWrite(11,LOW);
+  }
+    if(results.value==16714485) //ok                                       
+  {
+             digitalWrite(12,HIGH);
+  }
+  else if(results.value==4294967295)
+  {
+             digitalWrite(12,LOW);
+  }
+  }
+}
+
+
+### Output 
+
+![photo_2021-11-04_20-33-23](https://user-images.githubusercontent.com/56971600/140359957-f9dae048-c3bc-4fcb-a584-fbdc5b67179f.jpg)
+
+<iframe width="560" height="315"
+src= 
+
+
+
+https://user-images.githubusercontent.com/61041490/143665050-984dbde2-df83-4db6-babe-721643c94f3c.mp4
+
+
 
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
