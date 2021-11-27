@@ -587,54 +587,33 @@ https://user-images.githubusercontent.com/61041490/142663423-d815b3fc-62a9-4a30-
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
+# Experiment 10:IR Remote Control Using TSOP
 
-## Experiment 10 : IR Remote Control Using TSOP
+> An experiment to understand the working of IR Remote Control using TSOP.
 
-### IR Reciever Module 
-
-![image](https://user-images.githubusercontent.com/56971600/140337148-df56c567-69bf-48ce-8a23-63402a86651f.png)
-
-![image](https://user-images.githubusercontent.com/56971600/140337266-6add0eed-6557-478b-9a56-15278b6ec105.png)
-
-> The signal from the infrared remote controller is a series of binary pulse code. To avoid the other infrared signal interference during the wireless transmission, the signal is pre-modulated at a specific carrier frequency and then send out by an infrared emission diode. The infrared receiving device needs to filter out other waves and receive signals at that specific frequency and to modulate it back to binary pulse code, known as demodulation.
-
-### Working Principle 
-
-> The built-in receiver converts the light signal it received from the sender into feeble electrical signal. The signal will be amplified by the IC amplifier. After automatic gain control, band-pass filtering, demodulation, wave shaping, it returns to the original code. The code is then input to the code identification circuit by the receiver's signal output pin.
-
-![image](https://user-images.githubusercontent.com/56971600/140337956-1ce9a574-dda9-45fa-b3e3-9b8ffc845b1a.png)
-
-### Components Required 
+## Components Required
 
 * Arduino Uno Board*1
 * Infrared Remote Controller(You can use TV Remote or any other remote) *1
 * Infrared Receiver *1
 * LED *6
 * 220ΩResistor *6
-* Breadboard Wire *11
+* Breadboard Wire 
 * USB cable*1
 
-### Circuit Diagram 
+## Circuit Diagrams
 
-![image](https://user-images.githubusercontent.com/56971600/140338423-a0a2ac67-13c6-4aae-8734-340807e8b18f.png)
-![image](https://user-images.githubusercontent.com/56971600/140338955-20ae1a1e-f2c0-4c50-8111-264bde108053.png)
+![Tsop 1](https://user-images.githubusercontent.com/91405741/141268754-70c61b07-123b-4ef2-8568-70e8610e7a98.jpg)
 
-### Code 
-
-> Note : If your arduino shows errors while compiling ,You Need To Install IRremote.h Library ,
-
-You can download library  from https//github.com/shirriff/Arduino-IRremote
+## Code
 
 ```
 
-#include <IRremote.h>
- 
+#include <IRremote.h> 
 int RECV_PIN = 3;              
 int c=0;                      
 IRrecv irrecv(RECV_PIN);
 decode_results results;
-
-
 void setup()
 {
    pinMode(8, OUTPUT);
@@ -646,7 +625,6 @@ void setup()
    Serial.begin(9600);
   irrecv.enableIRIn();                     
 }
-
 void loop() {
   if (irrecv.decode(&results)) {
     Serial.println(results.value);
@@ -694,47 +672,44 @@ void loop() {
   }
 }
 
+```
 
-### Output 
-
-![photo_2021-11-04_20-33-23](https://user-images.githubusercontent.com/56971600/140359957-f9dae048-c3bc-4fcb-a584-fbdc5b67179f.jpg)
+## Output
 
 <iframe width="560" height="315"
-src= 
+src=
+     
 
+https://user-images.githubusercontent.com/61041490/143720953-bf0870a9-a25b-41cb-b4eb-c71412fce093.mp4
 
-
-https://user-images.githubusercontent.com/61041490/143665050-984dbde2-df83-4db6-babe-721643c94f3c.mp4
-
-
-
+   
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+allowfullscreen></iframe> 
 
 
-## Experiment 11 : Potentiometer Analog Value Reading
+# Experiment 11 :Potentiometer analog Value Reading
 
-![image](https://user-images.githubusercontent.com/56971600/140374692-b784acc5-bb8f-4d10-9ba7-4057e2ffdac1.png)
+> An experiment to understand the working of Potentiometer.
 
-> In this experiment we are reading value (Analog Value) from a Potentiometer
+## Components Required
 
-![image](https://user-images.githubusercontent.com/56971600/140374951-e010c55e-7dd3-4f38-b4fc-e17f9a31f8b5.png)
-
-### Components Required
-
-* Arduino Uno Board*1]
+* Arduino Uno Board*1
 * 10K Potentiometer *1
 * Breadboard*1
 * Breadboard Jumper Wire*3
 * USB cable*1
 
-![image](https://user-images.githubusercontent.com/56971600/140375262-584a9b92-43f6-428c-add2-535ed07f7da0.png)
-![image](https://user-images.githubusercontent.com/56971600/140375362-27496869-14a2-4488-80a2-e26a9e1ea550.png)
+## Circuit Diagrams
 
-### Code
+![Pot 1](https://user-images.githubusercontent.com/91405741/141272087-4bd29d71-4a2d-4768-8576-3064f16acce4.jpg)
+
+![Pot1 1](https://user-images.githubusercontent.com/91405741/141272429-4aca8d07-5f73-45af-9478-e1f1ca9a139d.jpg)
+
+## Code
 
 ```
+
 int potpin=0;// initialize analog pin 0
 int ledpin=13;// initialize digital pin 13
 int val=0;// define val, assign initial value 0
@@ -754,47 +729,43 @@ Serial.println(val);// display val’s value
 }
 
 ```
-### Output 
 
-![Screenshot (12)](https://user-images.githubusercontent.com/56971600/140376060-5889fa70-ed5d-49ad-8716-f6d38c6a5bf4.png)
-![photo_2021-11-04_21-37-44](https://user-images.githubusercontent.com/56971600/140376201-169a573f-8b0e-4ede-aac1-76a32aebe125.jpg)
+## Output
 
 <iframe width="560" height="315"
 src=
-
-https://user-images.githubusercontent.com/61041490/142661598-e0f93934-3170-4ba5-ab7f-ddc057c51b55.mp4
+https://user-images.githubusercontent.com/61041490/143720528-3febf955-4266-4794-bd24-f44fe0650e5e.mp4
 
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+allowfullscreen></iframe> 
 
 
-## Experiment 12 : & Segment Display 
+# Experiment 12 : 7 Segment Display
+        
+> An experiment to understand the working of 7 Segment Display.
 
-![image](https://user-images.githubusercontent.com/56971600/140504768-216f40aa-f970-4fe7-8d2b-832c6ccb23d6.png)
-
->LED segment display is a semiconductor light-emitting device. Its basic unit is a light-emitting diode (LED). LED segment display can be divided into 7-segment display and 8-segment display according to the number of segments. 8-segment display has one more LED unit ( for decimal point display) than 7-segment one.
-
-![image](https://user-images.githubusercontent.com/56971600/140504869-f5beacf3-27b8-4bf5-addb-46df45bda8f9.png)
-
-### Components Required
+## Components Required
 
 * Arduino Uno Board*1
-* 1-digit LED Segment Display*1
+* digit LED Segment Display*1
 * 220Ω Resistor*8
 * Breadboard*1
 * Breadboard Jumper Wires *several
 * USB cable*1
 
-### Circuite Diagram
+## Circuit Diagrams
 
-![image](https://user-images.githubusercontent.com/56971600/140505307-6096cc39-90b2-4712-976e-21ec3915fbab.png)
+![7segment 1](https://user-images.githubusercontent.com/91405741/141274968-2c6c5718-d7a4-4016-ac9f-a068bf684f58.jpg)
 
-![image](https://user-images.githubusercontent.com/56971600/140505352-be6373a7-375b-426c-afc5-1622bf332a4d.png)
+![7segmant1 1](https://user-images.githubusercontent.com/91405741/141275127-e639183c-b12f-4cb5-a544-b634ee6aa64f.jpg)
 
-### Code
+![7segment2 1](https://user-images.githubusercontent.com/91405741/141275211-e0cd2e60-6849-40e4-b569-595440c3d500.jpg)
+
+## Code
 
 ```
+
 int a=7;// set digital pin 7 for segment a
 int b=6;// set digital pin 6 for segment b
 int c=5;// set digital pin 5 for segment c
@@ -934,18 +905,22 @@ digital_8();// display number 8
 delay(1000); // wait for 1s
 digital_9();// display number 9
 delay(1000); // wait for 1s
-}}
+}
+}
+
 ```
 
-### Output 
-
-![image](https://user-images.githubusercontent.com/56971600/140505411-b73373fa-5cd1-4373-9beb-1702fdd18923.png)
+## Output
 
 <iframe width="560" height="315"
 src=
+        
 
-https://user-images.githubusercontent.com/61041490/142660287-b5497d6a-1413-4c15-9384-0fb5b23e1e63.mp4
+https://user-images.githubusercontent.com/61041490/143720581-61cc7aa6-836f-45cf-b7bb-2b0ff0e21908.mp4
+
 
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+allowfullscreen></iframe> 
+
+
