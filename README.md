@@ -588,7 +588,7 @@ frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
 
-## Experiment 10 : IR Remote Comntrol Using TSOP
+## Experiment 10 : IR Remote Control Using TSOP
 
 ### IR Reciever Module 
 
@@ -712,6 +712,7 @@ frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
 
+
 ## Experiment 11 : Potentiometer Analog Value Reading
 
 ![image](https://user-images.githubusercontent.com/56971600/140374692-b784acc5-bb8f-4d10-9ba7-4057e2ffdac1.png)
@@ -766,6 +767,7 @@ https://user-images.githubusercontent.com/61041490/142661598-e0f93934-3170-4ba5-
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
+
 
 ## Experiment 12 : & Segment Display 
 
