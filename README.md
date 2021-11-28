@@ -19,7 +19,7 @@ My major area of interests are IOT,Android App Development,Cyber Security and Pr
 * Jumper Wires (Male to Male ) X 2 Nos
 
 ## Circuit Diagram
-![blink](https://user-images.githubusercontent.com/56971600/138449253-04d5a19f-ea6a-44d6-97c3-3450e2bf583b.jpg)
+![WhatsApp Image 2021-11-28 at 1 57 36 AM](https://user-images.githubusercontent.com/61041490/143734907-3348e28f-129c-42c6-8160-a50b93e9ca5f.jpeg)
 
 ![5h7X9_3102_1627394356](https://user-images.githubusercontent.com/91405741/137279765-8a82a34f-1dc0-4afc-9bd3-a31d7f62c428.png)
 
@@ -71,9 +71,8 @@ allowfullscreen></iframe>
 
 ## Circuit Diagram
 
-![traffic1](https://user-images.githubusercontent.com/56971600/138451092-736bda3e-40b0-4972-9b18-28af8ae9e0b2.jpg)
+![WhatsApp Image 2021-11-28 at 1 54 04 AM](https://user-images.githubusercontent.com/61041490/143734941-34a9e59b-96c9-4dc3-b7a3-ca1d67a2b1a4.jpeg)
 
-![trafic2](https://user-images.githubusercontent.com/56971600/138451124-607ef72f-8888-40b4-ae40-440cbde8367c.jpg)
 
 ![yiU1x_3102_1627566759](https://user-images.githubusercontent.com/91405741/137288387-e85f8db9-ae97-49d0-888d-a2fc15e4c496.png)
 
@@ -137,8 +136,8 @@ allowfullscreen></iframe>
 * Breadboard wire *13
 
 ## Circuit Diagram
+![WhatsApp Image 2021-11-28 at 2 15 13 AM](https://user-images.githubusercontent.com/61041490/143734882-4bebc7b8-e2e3-482f-9e36-ac30f8db5fa2.jpeg)
 
-![chaser](https://user-images.githubusercontent.com/56971600/138451914-a95bf6aa-57fb-44bd-8530-c362d4dd5d5b.jpg)
 
 ![s5yR0_3102_1627567167](https://user-images.githubusercontent.com/91405741/137292096-feb60c91-1a9a-474b-a596-300285f7b011.png)
 
@@ -306,7 +305,7 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams
 
-![rgb](https://user-images.githubusercontent.com/56971600/138455771-53b5a7be-11f4-46ae-911e-83c2641f39d6.jpg)
+![WhatsApp Image 2021-11-28 at 2 19 45 AM](https://user-images.githubusercontent.com/61041490/143734847-367d2ee0-bad9-42b5-8c29-403e316c3449.jpeg)
 
 ![xX9cw_3102_1628160649](https://user-images.githubusercontent.com/91405741/137347719-6966c0b1-021d-471c-b0a7-48d0441752d0.png)
 
@@ -372,6 +371,8 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams
 
+![WhatsApp Image 2021-11-28 at 1 59 30 PM](https://user-images.githubusercontent.com/61041490/143735314-eee735f3-2660-47ca-911f-c459e0131d2f.jpeg)
+
 ![L5Iw9_3102_1628755894](https://user-images.githubusercontent.com/91405741/138436746-d1cfb008-0d90-4754-b4c4-fe133329c8b5.png)
 
 ## Components Required
@@ -387,8 +388,8 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams
 
-![ldr](https://user-images.githubusercontent.com/56971600/138456643-6e97c818-1f8c-4054-bdd5-c25deb9d8775.jpg)
 
+![WhatsApp Image 2021-11-27 at 8 14 06 AM](https://user-images.githubusercontent.com/61041490/143735034-0547c2f9-a62c-45ac-b4a1-15c36bb9195a.jpeg)
 ![schema_Myt5vqqplZ](https://user-images.githubusercontent.com/91405741/138436635-60cb2ec4-091d-4f24-bf96-b0289e06fa00.png)
 
 ## Procedure
@@ -505,7 +506,7 @@ void loop()
 
 > The buzzer produces a beep noise along with red LED lighting up when the IR Reciever is exposed to flames.
 
-![IMG_20211110_115447](https://user-images.githubusercontent.com/56971600/141062505-eaf1713d-519a-4798-877d-65199c28430e.jpg)
+![WhatsApp Image 2021-11-28 at 2 06 14 PM](https://user-images.githubusercontent.com/61041490/143735487-86326210-e0ca-42cb-8e9e-04971595ec9a.jpeg)
 
 
 <iframe width="560" height="315"
@@ -603,7 +604,7 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams
 
-![Tsop 1](https://user-images.githubusercontent.com/91405741/141268754-70c61b07-123b-4ef2-8568-70e8610e7a98.jpg)
+![WhatsApp Image 2021-11-28 at 2 09 46 PM](https://user-images.githubusercontent.com/61041490/143735576-0c520267-8ff9-4340-8b7f-feb5871c5675.jpeg)
 
 ## Code
 
@@ -911,6 +912,7 @@ delay(1000); // wait for 1s
 ```
 
 ## Output
+![WhatsApp Image 2021-11-28 at 2 14 37 PM](https://user-images.githubusercontent.com/61041490/143735853-87849c88-3c77-4bd0-96e0-6fb5be9e4471.jpeg)
 
 <iframe width="560" height="315"
 src=
