@@ -735,6 +735,7 @@ Serial.println(val);// display val’s value
 
 <iframe width="560" height="315"
 src=
+        
 https://user-images.githubusercontent.com/61041490/143720528-3febf955-4266-4794-bd24-f44fe0650e5e.mp4
 
 frameborder="0" 
@@ -757,13 +758,8 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams
 
-![7segment 1](https://user-images.githubusercontent.com/91405741/141274968-2c6c5718-d7a4-4016-ac9f-a068bf684f58.jpg)
 
-![7segmant1 1](https://user-images.githubusercontent.com/91405741/141275127-e639183c-b12f-4cb5-a544-b634ee6aa64f.jpg)
-
-![7segment2 1](https://user-images.githubusercontent.com/91405741/141275211-e0cd2e60-6849-40e4-b569-595440c3d500.jpg)
-
-## Code
+![WhatsApp Image 2021-11-28 at 2 14 37 PM](https://user-images.githubusercontent.com/61041490/143735853-87849c88-3c77-4bd0-96e0-6fb5be9e4471.jpeg)
 
 ```
 
@@ -912,7 +908,6 @@ delay(1000); // wait for 1s
 ```
 
 ## Output
-![WhatsApp Image 2021-11-28 at 2 14 37 PM](https://user-images.githubusercontent.com/61041490/143735853-87849c88-3c77-4bd0-96e0-6fb5be9e4471.jpeg)
 
 <iframe width="560" height="315"
 src=
