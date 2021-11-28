@@ -702,7 +702,7 @@ allowfullscreen></iframe>
 * USB cable*1
 
 ## Circuit Diagrams
-https://user-images.githubusercontent.com/61041490/143741099-1fa3a295-475d-4c8e-8587-afabebce298f.jpeg
+![WhatsApp Image 2021-11-28 at 2 31 04 PM](https://user-images.githubusercontent.com/61041490/143743472-89d58988-2269-4eea-9e5b-a816a3a7331b.jpeg)
 
 
 ## Code
