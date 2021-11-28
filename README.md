@@ -702,10 +702,8 @@ allowfullscreen></iframe>
 * USB cable*1
 
 ## Circuit Diagrams
+https://user-images.githubusercontent.com/61041490/143741099-1fa3a295-475d-4c8e-8587-afabebce298f.jpeg
 
-![Pot 1](https://user-images.githubusercontent.com/91405741/141272087-4bd29d71-4a2d-4768-8576-3064f16acce4.jpg)
-
-![Pot1 1](https://user-images.githubusercontent.com/91405741/141272429-4aca8d07-5f73-45af-9478-e1f1ca9a139d.jpg)
 
 ## Code
 
